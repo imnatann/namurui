@@ -1,0 +1,760 @@
+/* ---------------------------------------------------------------------------
+ * NamurUI gallery chrome: a panel rail on the left, a card per item, a preview
+ * surface with light/dark toggles, and a code panel.
+ *
+ * Identity, type and motion all arrive as tokens (tokens.css for colour and
+ * faces, motion.css for durations and curves); nothing here is themed by a
+ * literal, so the theme switch is entirely the token layer's job. The
+ * [data-theme="dark"] attribute and the .dark class are read in tokens.css.
+ * ------------------------------------------------------------------------- */
+
+.g-app {
+  position: relative;
+  /* Isolated so the grain below is a layer of this surface and cannot blend
+   * through whatever a host page paints behind it. */
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: 268px minmax(0, 1fr);
+  min-height: 100dvh;
+  background: var(--bg);
+}
+
+/* The gallery surface carries the one grain the identity asks for. `.nm-grain`
+ * from motion.css paints its overlay at z-index 0, which over this DOM (a
+ * single grid container whose children are not lifted) would texture the
+ * component previews too; drawn at z-index -1 inside the isolated app surface,
+ * the grain reaches the background only and every preview, panel and card
+ * stays flat. */
+.g-app::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: var(--grain);
+  opacity: var(--grain-opacity, 0.04);
+  mix-blend-mode: soft-light;
+  z-index: -1;
+}
+
+/* ---------- rail ---------- */
+
+.g-rail {
+  position: sticky;
+  top: 0;
+  align-self: start;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 18px 14px 20px;
+  border-right: 1px solid var(--border);
+  background: var(--panel);
+  overflow: hidden;
+}
+
+.g-brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 0 6px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  font-family: var(--font-display);
+  color: var(--text);
+}
+
+.g-brand svg {
+  width: 20px;
+  height: 20px;
+}
+
+.g-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.g-search input {
+  width: 100%;
+  height: 36px;
+  padding: 0 54px 0 34px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--card);
+  font-size: 13.5px;
+  color: var(--text);
+  outline: none;
+  transition:
+    border-color var(--nm-dur-2, 160ms) var(--nm-ease-out, cubic-bezier(0.22, 1, 0.36, 1)),
+    box-shadow var(--nm-dur-2, 160ms) var(--nm-ease-out, cubic-bezier(0.22, 1, 0.36, 1));
+}
+
+.g-search input::placeholder {
+  color: var(--text-muted);
+}
+
+.g-search input:focus-visible {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+.g-search > svg {
+  position: absolute;
+  left: 11px;
+  width: 15px;
+  height: 15px;
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.g-search kbd {
+  position: absolute;
+  right: 8px;
+  display: flex;
+  gap: 2px;
+  font-family: inherit;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.g-search kbd span {
+  display: grid;
+  place-items: center;
+  min-width: 17px;
+  height: 17px;
+  padding: 0 4px;
+  border-radius: 5px;
+  background: var(--muted-bg);
+}
+
+.g-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 0 2px;
+}
+
+.g-chip {
+  height: 26px;
+  padding: 0 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  background: var(--card);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition:
+    background-color var(--nm-dur-2, 160ms) var(--nm-ease-out, cubic-bezier(0.22, 1, 0.36, 1)),
+    color var(--nm-dur-2, 160ms) var(--nm-ease-out, cubic-bezier(0.22, 1, 0.36, 1)),
+    border-color var(--nm-dur-2, 160ms) var(--nm-ease-out, cubic-bezier(0.22, 1, 0.36, 1));
+}
+
+.g-chip:hover {
+  background: var(--hover-bg);
+  color: var(--text);
+}
+
+.g-chip[data-on] {
+  border-color: transparent;
+  background: var(--primary);
+  color: var(--primary-fg);
+}
+
+.g-nav {
+  flex: 1;
+  min-height: 0;
+  margin: 0 -6px;
+  padding: 0 6px 8px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+}
+
+.g-nav h2 {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  margin: 10px 0 4px;
+  padding: 6px 6px;
+  background: var(--panel);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.g-nav button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  height: 30px;
+  padding: 0 8px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  font-size: 13px;
+  color: var(--text-muted);
+  text-align: left;
+  cursor: pointer;
+  transition:
+    background-color var(--nm-dur-2, 160ms) var(--nm-ease-out, cubic-bezier(0.22, 1, 0.36, 1)),
+    color var(--nm-dur-2, 160ms) var(--nm-ease-out, cubic-bezier(0.22, 1, 0.36, 1));
+}
+
+.g-nav button:hover {
+  background: var(--hover-bg);
+  color: var(--text);
+}
+
+.g-nav button[aria-current="page"] {
+  background: var(--muted-bg);
+  color: var(--text);
+  font-weight: 500;
+}
+
+.g-nav button span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* The rail supplies each dot's tier colour inline; this is the shape, plus a
+ * neutral default for a dot rendered without one. */
+.g-dot {
+  flex: none;
+  width: 6px;
+  height: 6px;
+  margin-left: auto;
+  border-radius: 50%;
+  background: var(--text-subtle);
+}
+
+.g-rail-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 8px 0;
+  border-top: 1px solid var(--border);
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* ---------- main ---------- */
+
+.g-main {
+  min-width: 0;
+  padding: 26px 30px 80px;
+}
+
+.g-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.g-head h1 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+}
+
+.g-head p {
+  max-width: 62ch;
+  margin: 6px 0 0;
+  font-size: 14.5px;
+  color: var(--text-muted);
+}
+
+.g-head-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.g-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  height: 34px;
+  padding: 0 13px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--card);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background-color var(--nm-dur-2, 160ms) var(--nm-ease-out, cubic-bezier(0.22, 1, 0.36, 1)),
+    border-color var(--nm-dur-2, 160ms) var(--nm-ease-out, cubic-bezier(0.22, 1, 0.36, 1)),
+    transform var(--nm-dur-1, 90ms) var(--nm-ease-out, cubic-bezier(0.22, 1, 0.36, 1));
+}
+
+.g-btn:hover {
+  background: var(--hover-bg);
+}
+
+.g-btn:active {
+  transform: scale(0.97);
+}
+
+.g-btn[data-primary] {
+  border-color: transparent;
+  background: var(--primary);
+  color: var(--primary-fg);
+}
+
+.g-btn svg {
+  width: 14px;
+  height: 14px;
+}
+
+.g-badge {
+  display: inline-flex;
+  align-items: center;
+  height: 22px;
+  padding: 0 9px;
+  border-radius: var(--radius-pill);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+/* Tier is metadata, never a second accent, so the badge stays ink and outline.
+ * All three tiers are defined here and nowhere else, so the badge cannot drift
+ * between the grid and the item page. */
+.g-badge[data-tier="Free"] {
+  background: transparent;
+  color: var(--text-muted);
+  box-shadow: inset 0 0 0 1px var(--border);
+}
+
+.g-badge[data-tier="Pro"] {
+  background: var(--pro-bg);
+  color: var(--text);
+}
+
+.g-badge[data-tier="Core"] {
+  background: var(--accent-soft);
+  color: var(--accent-hover);
+}
+
+/* ---------- preview surface ---------- */
+
+.g-surface {
+  position: relative;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-panel);
+  background: var(--card);
+  box-shadow: var(--panel-shadow);
+  overflow: hidden;
+}
+
+.g-surface-bar {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--border);
+  background: var(--panel);
+}
+
+.g-tab {
+  height: 30px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition:
+    background-color var(--nm-dur-2, 160ms) var(--nm-ease-out, cubic-bezier(0.22, 1, 0.36, 1)),
+    color var(--nm-dur-2, 160ms) var(--nm-ease-out, cubic-bezier(0.22, 1, 0.36, 1));
+}
+
+.g-tab[aria-selected="true"] {
+  background: var(--card);
+  color: var(--text);
+  box-shadow: var(--shadow-card);
+}
+
+.g-tab:hover:not([aria-selected="true"]) {
+  color: var(--text);
+}
+
+.g-surface-bar .g-spacer {
+  flex: 1;
+}
+
+.g-icon-btn {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition:
+    background-color var(--nm-dur-2, 160ms) var(--nm-ease-out, cubic-bezier(0.22, 1, 0.36, 1)),
+    color var(--nm-dur-2, 160ms) var(--nm-ease-out, cubic-bezier(0.22, 1, 0.36, 1));
+}
+
+.g-icon-btn:hover {
+  background: var(--hover-bg);
+  color: var(--text);
+}
+
+.g-icon-btn[data-on] {
+  border-color: var(--border);
+  background: var(--card);
+  color: var(--text);
+}
+
+.g-icon-btn svg {
+  width: 15px;
+  height: 15px;
+}
+
+.g-preview {
+  /* Column flex, not grid: in a grid a centred item is sized fit-content, so a demo's
+   * `width: 100%` wrapper collapsed to 50px and every screen demo rendered blank.
+   * In a column flex the percentage resolves against the container, so wrappers fill.
+   * Non-div roots (illustration <article>/<svg> cards) keep their natural size and stay
+   * centred. */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 340px;
+  padding: 40px 28px;
+  background:
+    radial-gradient(120% 90% at 50% 0%, var(--preview), var(--card) 62%);
+}
+
+.g-preview > div,
+.g-preview > section,
+.g-preview > main {
+  width: 100%;
+}
+
+.g-preview[data-flush] {
+  display: block;
+  padding: 0;
+}
+
+.g-preview > * {
+  max-width: 100%;
+}
+
+/* The dark preview carries no palette of its own: the item page puts the
+ * tokens.css `.dark` class on the preview surface, so the dark theme arrives
+ * through the same variables as the rest of the app and cannot drift from it. */
+
+/* ---------- code ---------- */
+
+.g-code {
+  position: relative;
+  max-height: 620px;
+  margin: 0;
+  padding: 18px 20px;
+  overflow: auto;
+  background: var(--preview);
+  font-family: var(--font-mono, ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace);
+  font-size: 12.5px;
+  line-height: 1.65;
+  tab-size: 2;
+  white-space: pre;
+  color: var(--text);
+}
+
+/* Syntax roles for the code panel. The palette is a token group, so both themes
+ * come from one place and no per-theme rule is needed here. */
+.g-code .tok-k {
+  color: var(--code-keyword);
+}
+.g-code .tok-s {
+  color: var(--code-string);
+}
+.g-code .tok-c {
+  color: var(--code-comment);
+  font-style: italic;
+}
+.g-code .tok-n {
+  color: var(--code-number);
+}
+.g-code .tok-f {
+  color: var(--code-function);
+}
+.g-code .tok-t {
+  color: var(--code-type);
+}
+
+/* ---------- sections ---------- */
+
+.g-section {
+  margin-top: 22px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-panel);
+  background: var(--card);
+  box-shadow: var(--panel-shadow);
+  overflow: hidden;
+}
+
+.g-section > h2 {
+  margin: 0;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--text-muted);
+}
+
+.g-prose {
+  padding: 16px 18px 20px;
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--text);
+}
+
+.g-prose h3 {
+  margin: 20px 0 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.g-prose h3:first-child {
+  margin-top: 0;
+}
+
+.g-prose ul {
+  margin: 0 0 0 18px;
+  padding: 0;
+}
+
+.g-prose li {
+  margin: 4px 0;
+}
+
+.g-prose code {
+  padding: 1px 5px;
+  border-radius: 5px;
+  background: var(--muted-bg);
+  font-family: var(--font-mono, ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace);
+  font-size: 12.5px;
+}
+
+.g-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+}
+
+.g-table th,
+.g-table td {
+  padding: 9px 18px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+
+.g-table th {
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.g-table td:first-child {
+  font-family: var(--font-mono, ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace);
+  font-size: 12.5px;
+  white-space: nowrap;
+}
+
+.g-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.g-muted {
+  color: var(--text-muted);
+}
+
+/* ---------- overview ---------- */
+
+/* A category is a section of the page, not a card: a rule and a count do the grouping
+ * so the tiles keep all of the emphasis. */
+.g-cat + .g-cat {
+  margin-top: 44px;
+}
+
+.g-cat-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 10px;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border, #e8e0d7);
+}
+
+.g-cat-head h2 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.g-cat-head span {
+  padding: 1px 7px;
+  border-radius: var(--radius-pill, 999px);
+  background: var(--muted-bg, #7a4a1c0a);
+  font-size: 11.5px;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-muted, #6f625a);
+}
+
+.g-cat-head p {
+  flex: 1 1 20ch;
+  margin: 0 0 0 auto;
+  min-width: 0;
+  font-size: 12.5px;
+  text-align: right;
+  color: var(--text-muted, #6f625a);
+}
+
+@media (max-width: 640px) {
+  .g-cat-head p {
+    flex-basis: 100%;
+    margin-left: 0;
+    text-align: left;
+  }
+}
+
+.g-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(248px, 1fr));
+  gap: 14px;
+}
+
+.g-tile {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 158px;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  background: var(--card);
+  text-align: left;
+  cursor: pointer;
+  transition:
+    transform var(--nm-dur-3, 240ms) var(--nm-ease-both, cubic-bezier(0.65, 0, 0.35, 1)),
+    box-shadow var(--nm-dur-3, 240ms) var(--nm-ease-both, cubic-bezier(0.65, 0, 0.35, 1)),
+    border-color var(--nm-dur-2, 160ms) var(--nm-ease-out, cubic-bezier(0.22, 1, 0.36, 1));
+}
+
+.g-tile:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--text) 14%, var(--border));
+  box-shadow: var(--shadow-pop);
+}
+
+.g-tile:active {
+  transform: translateY(0) scale(0.995);
+}
+
+.g-tile h3 {
+  margin: 0;
+  font-size: 14.5px;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+
+.g-tile p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text-muted);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.g-tile-foot {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 8px;
+  font-size: 11.5px;
+  color: var(--text-muted);
+}
+
+.g-empty {
+  padding: 60px 20px;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 900px) {
+  .g-app {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .g-rail {
+    position: static;
+    height: auto;
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .g-nav {
+    max-height: 240px;
+  }
+  .g-main {
+    padding: 20px 16px 60px;
+  }
+  .g-head {
+    flex-wrap: wrap;
+  }
+  .g-head-actions {
+    margin-left: 0;
+  }
+}
+
+/* The floor under every transition this file writes, for a host that loads the
+ * gallery without motion.css. Colour and opacity survive; nothing moves. */
+@media (prefers-reduced-motion: reduce) {
+  .g-search input,
+  .g-chip,
+  .g-nav button,
+  .g-btn,
+  .g-tab,
+  .g-icon-btn,
+  .g-tile {
+    transition-duration: 1ms;
+  }
+  .g-tile:hover,
+  .g-tile:active,
+  .g-btn:active {
+    transform: none;
+  }
+}

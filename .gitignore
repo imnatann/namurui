@@ -1,0 +1,14 @@
+node_modules
+dist
+.DS_Store
+*.local
+
+# Build artefact from `tsc -b`.
+*.tsbuildinfo
+
+# Scratch: extraction intermediates, probe screenshots, throwaway scripts.
+# `/--root` is a real directory the extraction scripts created by treating a
+# `--root` flag as a path; its companion sheets are already merged into `src`.
+/.tmp
+/tmp
+/--root

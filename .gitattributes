@@ -1,0 +1,6 @@
+# The library is LF in the working tree on every platform; Windows'
+# core.autocrlf would otherwise rewrite every file on checkout.
+* text=auto eol=lf
+
+*.png binary
+*.woff2 binary

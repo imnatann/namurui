@@ -1,0 +1,34 @@
+[
+  {
+    "id": "Agents",
+    "blurb": "Planning, steering, reviewing and paying for agent work."
+  },
+  {
+    "id": "Conversation",
+    "blurb": "Messages, answers, drafts and the composer around them."
+  },
+  {
+    "id": "Workspace",
+    "blurb": "App frames, screens, sessions, files and settings."
+  },
+  {
+    "id": "Data display",
+    "blurb": "Tables, charts, meters and money."
+  },
+  {
+    "id": "Controls",
+    "blurb": "Buttons, fields, pickers and the forms built from them."
+  },
+  {
+    "id": "Feedback",
+    "blurb": "Progress, notices and the state of the system."
+  },
+  {
+    "id": "Marketing",
+    "blurb": "Public site: chrome, landing sections, pricing and legal."
+  },
+  {
+    "id": "Artwork & motion",
+    "blurb": "Illustrations, backgrounds and motion primitives."
+  }
+]

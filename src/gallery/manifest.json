@@ -1,0 +1,1631 @@
+[
+  {
+    "slug": "button",
+    "title": "Button",
+    "kind": "components",
+    "tier": "Free",
+    "category": "Controls",
+    "description": "Primary, secondary, ghost and destructive buttons with icons, sizes and a shimmering loading state",
+    "url": "https://www.affectui.com/components/button"
+  },
+  {
+    "slug": "change-summary",
+    "title": "Change Summary",
+    "kind": "components",
+    "tier": "Free",
+    "category": "Data display",
+    "description": "What moved since last time – one metric per row with a colored trend",
+    "url": "https://www.affectui.com/components/change-summary"
+  },
+  {
+    "slug": "comment-thread",
+    "title": "Comment Thread",
+    "kind": "components",
+    "tier": "Free",
+    "category": "Conversation",
+    "description": "One comment with replies – an assistant reports what it did, folds open details and answers @mentions",
+    "url": "https://www.affectui.com/components/comment-thread"
+  },
+  {
+    "slug": "decision-inbox",
+    "title": "Decision Inbox",
+    "kind": "components",
+    "tier": "Free",
+    "category": "Feedback",
+    "description": "Open decisions with two quick answers each – answered ones confirm and fold away",
+    "url": "https://www.affectui.com/components/decision-inbox"
+  },
+  {
+    "slug": "email-draft",
+    "title": "Email Draft",
+    "kind": "components",
+    "tier": "Free",
+    "category": "Conversation",
+    "description": "Agent-written email for review – switch recipient and tone, edit inline, remove the attachment, send or discard with undo",
+    "url": "https://www.affectui.com/components/email-draft"
+  },
+  {
+    "slug": "filter-menu",
+    "title": "Filter Menu",
+    "kind": "components",
+    "tier": "Free",
+    "category": "Controls",
+    "description": "Grouped filters with removable chips, collapsible checkbox groups, Clear all and full keyboard control",
+    "url": "https://www.affectui.com/components/filter-menu"
+  },
+  {
+    "slug": "message-actions",
+    "title": "Message Actions",
+    "kind": "components",
+    "tier": "Free",
+    "category": "Conversation",
+    "description": "The quiet bar under an AI message – copy turns into a check, regenerate spins and unfolds a version switcher, thumbs pop and ask why, read aloud becomes a tiny equalizer",
+    "url": "https://www.affectui.com/components/message-actions"
+  },
+  {
+    "slug": "notification-stack",
+    "title": "Notification Stack",
+    "kind": "components",
+    "tier": "Free",
+    "category": "Feedback",
+    "description": "Notice cards stacked behind each other – dismiss the front one to reveal the next",
+    "url": "https://www.affectui.com/components/notification-stack"
+  },
+  {
+    "slug": "otp-input",
+    "title": "OTP Input",
+    "kind": "components",
+    "tier": "Free",
+    "category": "Controls",
+    "description": "The verification code field done right – a gliding focus ring, paste and SMS autofill, a calm shake on errors and a morph into Verified",
+    "url": "https://www.affectui.com/components/otp-input"
+  },
+  {
+    "slug": "profile-menu",
+    "title": "Profile Menu",
+    "kind": "components",
+    "tier": "Free",
+    "category": "Controls",
+    "description": "Account card with the signed-in user, menu actions and profile setup progress",
+    "url": "https://www.affectui.com/components/profile-menu"
+  },
+  {
+    "slug": "progress-tracker",
+    "title": "Progress Tracker",
+    "kind": "components",
+    "tier": "Free",
+    "category": "Feedback",
+    "description": "Onboarding checklist with an animated progress bar, ticks that draw themselves and auto play",
+    "url": "https://www.affectui.com/components/progress-tracker"
+  },
+  {
+    "slug": "reaction-bar",
+    "title": "Reaction Bar",
+    "kind": "components",
+    "tier": "Free",
+    "category": "Conversation",
+    "description": "Like, comment, repost and share in one pill – icons pop and fill, counts roll in digit by digit",
+    "url": "https://www.affectui.com/components/reaction-bar"
+  },
+  {
+    "slug": "segmented-control",
+    "title": "Segmented Control",
+    "kind": "components",
+    "tier": "Free",
+    "category": "Controls",
+    "description": "Switch between two to six options – a raised pill or underline that glides, stretches a little and can be dragged across, with icons, counts and badges",
+    "url": "https://www.affectui.com/components/segmented-control"
+  },
+  {
+    "slug": "smart-recommendation",
+    "title": "Smart Recommendation",
+    "kind": "components",
+    "tier": "Free",
+    "category": "Conversation",
+    "description": "Suggestion card with a confidence signal, alternatives to switch to and accept with undo",
+    "url": "https://www.affectui.com/components/smart-recommendation"
+  },
+  {
+    "slug": "thinking-loader",
+    "title": "Thinking Loader",
+    "kind": "components",
+    "tier": "Free",
+    "category": "Conversation",
+    "description": "A small working pill for AI replies – an eight-ray spinner and a shimmering label that rolls through phases and settles on a check",
+    "url": "https://www.affectui.com/components/thinking-loader"
+  },
+  {
+    "slug": "tips-panel",
+    "title": "Tips Panel",
+    "kind": "components",
+    "tier": "Free",
+    "category": "Workspace",
+    "description": "Grid of short tips with one action each – taken tips turn into a done state",
+    "url": "https://www.affectui.com/components/tips-panel"
+  },
+  {
+    "slug": "tool-call-card",
+    "title": "Tool Call Card",
+    "kind": "components",
+    "tier": "Free",
+    "category": "Agents",
+    "description": "An agent's tool call in one line – live timer, status and summary, folds open to highlighted arguments and result with copy, retry on errors and a group that sums them up",
+    "url": "https://www.affectui.com/components/tool-call-card"
+  },
+  {
+    "slug": "ai-answer",
+    "title": "AI Answer",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Conversation",
+    "description": "Streamed answer with source cards, citation chips that preview their source, copy, regenerate, feedback and follow-ups",
+    "url": "https://www.affectui.com/components/ai-answer"
+  },
+  {
+    "slug": "agent-cursors",
+    "title": "Agent Cursors",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Agents",
+    "description": "Agents working in a document like teammates in a multiplayer editor – live pointers with names, suggestions typed letter by letter, images they resize, code they fix and comments beside the page",
+    "url": "https://www.affectui.com/components/agent-cursors"
+  },
+  {
+    "slug": "agent-graph",
+    "title": "Agent Graph",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Agents",
+    "description": "Agents and the tools they call as a living network – a pulse along the link for every call and its answer, busy links growing thicker, agents that breathe while they work and turn amber when they need you",
+    "url": "https://www.affectui.com/components/agent-graph"
+  },
+  {
+    "slug": "agent-inbox",
+    "title": "Agent Inbox",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Agents",
+    "description": "All your background agent tasks in one calm list – live clocks and status tags, filter tabs with rolling counts, rows that unfold to the last steps with Approve, Reject, Retry or Open, and glide to their new place",
+    "url": "https://www.affectui.com/components/agent-inbox"
+  },
+  {
+    "slug": "agent-lanes",
+    "title": "Agent Lanes",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Agents",
+    "description": "Where every agent is right now – a live timeline with a lane per agent, tasks growing into “now”, hand-offs drawn between agents and approvals right on the block",
+    "url": "https://www.affectui.com/components/agent-lanes"
+  },
+  {
+    "slug": "agent-ledger",
+    "title": "Agent Ledger",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Agents",
+    "description": "Everything an agent changed in your systems, each change with an undo – before and after per row, and pointing at Undo shows what builds on it: what would be undone too, and what can't be taken back",
+    "url": "https://www.affectui.com/components/agent-ledger"
+  },
+  {
+    "slug": "agent-plan",
+    "title": "Agent Plan",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Agents",
+    "description": "An agent's step-by-step plan to review before it runs – rename, drag to reorder, remove or add steps, then watch each one run with live timers and retry from a failed step",
+    "url": "https://www.affectui.com/components/agent-plan"
+  },
+  {
+    "slug": "agent-queue",
+    "title": "Agent Queue",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Agents",
+    "description": "The work waiting for your agents, and how fast it moves – jobs drop into a live queue, glide into free worker slots as growing bars and land in Done or Failed, while a depth chart shows the backlog build up when a rate limit pauses the workers and drain when they resume",
+    "url": "https://www.affectui.com/components/agent-queue"
+  },
+  {
+    "slug": "agent-steering",
+    "title": "Agent Steering",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Agents",
+    "description": "Steer an agent while it works – queue a note for the next step and watch it glide into the plan when the agent picks it up, or interrupt right away",
+    "url": "https://www.affectui.com/components/agent-steering"
+  },
+  {
+    "slug": "agent-tree",
+    "title": "Agent Tree",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Agents",
+    "description": "Who started whom – an orchestrator and its sub-agents as a live tree, with status, cost and time on every card, costs rolling up each branch, and branches that fold to one line",
+    "url": "https://www.affectui.com/components/agent-tree"
+  },
+  {
+    "slug": "approval-card",
+    "title": "Approval Card",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Agents",
+    "description": "An agent asks before it acts – risk badge, preview, Approve and Deny with shortcuts, a pausing countdown, and a smooth morph into a resolved row",
+    "url": "https://www.affectui.com/components/approval-card"
+  },
+  {
+    "slug": "autonomy-dial",
+    "title": "Autonomy Dial",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Agents",
+    "description": "How much an agent may do on its own – a three-stop dial, and its real actions gliding between “Runs on its own” and “Asks you first”, with a lock for what always asks",
+    "url": "https://www.affectui.com/components/autonomy-dial"
+  },
+  {
+    "slug": "billing-schedule",
+    "title": "Billing Schedule",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Controls",
+    "description": "Build a billing phase – start date, duration, products with repeats and timing, discount, minimum and live totals",
+    "url": "https://www.affectui.com/components/billing-schedule"
+  },
+  {
+    "slug": "breakdown-chart",
+    "title": "Breakdown Chart",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Data display",
+    "description": "Stacked bar chart with measure, slice and segment pickers, a hover breakdown and a linked table",
+    "url": "https://www.affectui.com/components/breakdown-chart"
+  },
+  {
+    "slug": "chat-composer",
+    "title": "Chat Composer",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Conversation",
+    "description": "Prompt composer with model picker, voice input, app connections and approval request",
+    "url": "https://www.affectui.com/components/chat-composer"
+  },
+  {
+    "slug": "cited-answer",
+    "title": "Cited Answer",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Conversation",
+    "description": "An AI answer wired to its sources – point at a citation to light up its sentence and source, click to unfold the quoted passage with the matching words marked",
+    "url": "https://www.affectui.com/components/cited-answer"
+  },
+  {
+    "slug": "combobox",
+    "title": "Combobox",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Controls",
+    "description": "Pick one or many from a searchable, grouped list – chips with avatars, highlighted matches, create-on-the-fly and full keyboard support",
+    "url": "https://www.affectui.com/components/combobox"
+  },
+  {
+    "slug": "command-menu",
+    "title": "Command Menu",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Controls",
+    "description": "Search and run anything from one field – tool actions with logos and ⌘1–⌘5, everyday commands with icons",
+    "url": "https://www.affectui.com/components/command-menu"
+  },
+  {
+    "slug": "comments-panel",
+    "title": "Comments Panel",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Conversation",
+    "description": "Comment feed with filters, runnable /edit commands, resolve and a composer",
+    "url": "https://www.affectui.com/components/comments-panel"
+  },
+  {
+    "slug": "compact-breakdown",
+    "title": "Compact Breakdown",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Data display",
+    "description": "A total split into its parts in one small card – numbers roll, the bar glides and the ranked rows trade places when the period changes",
+    "url": "https://www.affectui.com/components/compact-breakdown"
+  },
+  {
+    "slug": "context-window",
+    "title": "Context Window",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Agents",
+    "description": "What fills the model's context, as a field of cells – hover a part to light it up, remove files, and compact the conversation while its cells shimmer and clear",
+    "url": "https://www.affectui.com/components/context-window"
+  },
+  {
+    "slug": "data-table",
+    "title": "Data Table",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Data display",
+    "description": "Spreadsheet-style table: select cells and ranges, edit in place, copy and paste, undo and sort",
+    "url": "https://www.affectui.com/components/data-table"
+  },
+  {
+    "slug": "date-range-picker",
+    "title": "Date Range Picker",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Controls",
+    "description": "Presets and two calendars with a hover preview, comparison with the previous period or year, full keyboard control",
+    "url": "https://www.affectui.com/components/date-range-picker"
+  },
+  {
+    "slug": "decision-tree",
+    "title": "Decision Tree",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Agents",
+    "description": "An agent stuck on a decision lays out its options as a tree – the consequences of each branch, the risky ones marked, its own pick highlighted – and you choose a path or write your own",
+    "url": "https://www.affectui.com/components/decision-tree"
+  },
+  {
+    "slug": "delegate-board",
+    "title": "Delegate Board",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Agents",
+    "description": "Hand work to your agents by dragging it onto them – each agent previews its new “busy until” time, or switch to Auto and every new task goes to whoever is free first",
+    "url": "https://www.affectui.com/components/delegate-board"
+  },
+  {
+    "slug": "dropzone",
+    "title": "Dropzone",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Controls",
+    "description": "Drag files in and watch them upload – fanning documents, colored type badges, progress with time left, errors with retry",
+    "url": "https://www.affectui.com/components/dropzone"
+  },
+  {
+    "slug": "experiment-card",
+    "title": "Experiment Card",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Data display",
+    "description": "An A/B test in two lines that quietly unfolds on hover – variants linked to a tiny chart, a metric switch with rolling numbers, and a winner you pick with a click",
+    "url": "https://www.affectui.com/components/experiment-card"
+  },
+  {
+    "slug": "fan-out-grid",
+    "title": "Fan-out Grid",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Agents",
+    "description": "One agent hands a big job to many workers – every task a cell on a live grid that fills in as they get through it, with retries, failures, cost and the time left, and the details of any task on hover",
+    "url": "https://www.affectui.com/components/fan-out-grid"
+  },
+  {
+    "slug": "inline-diff",
+    "title": "Inline Diff",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Agents",
+    "description": "AI edits to prose shown inline – struck and added words you accept or reject one by one, with keys, a popover and undo",
+    "url": "https://www.affectui.com/components/inline-diff"
+  },
+  {
+    "slug": "integration-picker",
+    "title": "Integration Picker",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Controls",
+    "description": "Integrations page of a command menu – search, a list of services and the picked one with its connection on two tiles",
+    "url": "https://www.affectui.com/components/integration-picker"
+  },
+  {
+    "slug": "integration-settings",
+    "title": "Integration Settings",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Controls",
+    "description": "Settings card for a connected service – on/off switch, API key, validated site address, time zone and a save bar",
+    "url": "https://www.affectui.com/components/integration-settings"
+  },
+  {
+    "slug": "kpi-chart",
+    "title": "KPI Chart",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Data display",
+    "description": "Metric card with a multi-line chart and a tooltip that follows the pointer",
+    "url": "https://www.affectui.com/components/kpi-chart"
+  },
+  {
+    "slug": "memory-panel",
+    "title": "Memory Panel",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Agents",
+    "description": "What the assistant remembers about you, grouped and editable – a master switch, category filters, and on every memory edit in place, pause or forget with Undo on the tray",
+    "url": "https://www.affectui.com/components/memory-panel"
+  },
+  {
+    "slug": "model-picker",
+    "title": "Model Picker",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Conversation",
+    "description": "The model menu of an AI chat – point at a model and its speed, quality and cost bars fill, switch on extended thinking and its effort unfolds, while the tray rolls the first-token time and price",
+    "url": "https://www.affectui.com/components/model-picker"
+  },
+  {
+    "slug": "parallel-attempts",
+    "title": "Parallel Attempts",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Agents",
+    "description": "An agent tries the same task several ways at once and the best one wins – every attempt races as a row with its model, approach and live bar, then gets a score; the best is marked and picked, and you can switch to another",
+    "url": "https://www.affectui.com/components/parallel-attempts"
+  },
+  {
+    "slug": "permission-request",
+    "title": "Permission Request",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Agents",
+    "description": "An agent asks for one specific right – who, why and exactly what will happen – and you allow it once, for an hour or always; then it folds into one line with the time left and Revoke",
+    "url": "https://www.affectui.com/components/permission-request"
+  },
+  {
+    "slug": "project-card",
+    "title": "Project Card",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Workspace",
+    "description": "A two-line project summary that quietly unfolds on hover – a progress ring with one segment per subtask, a people filter and a status picker, all linked by hover",
+    "url": "https://www.affectui.com/components/project-card"
+  },
+  {
+    "slug": "prompt-library",
+    "title": "Prompt Library",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Controls",
+    "description": "Saved prompt templates with variables – type straight into the sentence, watch the finished prompt assemble below, and use it once every variable is filled",
+    "url": "https://www.affectui.com/components/prompt-library"
+  },
+  {
+    "slug": "review-center",
+    "title": "Review Center",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Agents",
+    "description": "A focused workspace for what your agents want to do – the queue sorted by risk, one item at a time with the shaky spans marked, Approve, Edit, Reject and Skip on single keys, a stamp as each one leaves and the next one rising in",
+    "url": "https://www.affectui.com/components/review-center"
+  },
+  {
+    "slug": "setup-guide",
+    "title": "Setup Guide",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Workspace",
+    "description": "Onboarding panel with a progress bar and collapsible task groups that strike through when done",
+    "url": "https://www.affectui.com/components/setup-guide"
+  },
+  {
+    "slug": "stepper-form",
+    "title": "Stepper Form",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Controls",
+    "description": "A multi-step flow for onboarding and setup – steps that fill and check off, sliding steps, a card that morphs to each step, inline validation and a success state",
+    "url": "https://www.affectui.com/components/stepper-form"
+  },
+  {
+    "slug": "thinking-state",
+    "title": "Thinking State",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Conversation",
+    "description": "AI working panel with a live timer, searched sources and thinking steps that appear one by one",
+    "url": "https://www.affectui.com/components/thinking-state"
+  },
+  {
+    "slug": "toaster",
+    "title": "Toaster",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Feedback",
+    "description": "Calm toasts from anywhere – a stack that fans out on hover, promise toasts that morph from spinner to check, swipe to dismiss",
+    "url": "https://www.affectui.com/components/toaster"
+  },
+  {
+    "slug": "trace-waterfall",
+    "title": "Trace Waterfall",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Agents",
+    "description": "Where the time and money of an agent run go – every LLM call, tool call and sub-agent as a bar on a live timeline, with tokens and cost per step, the slowest call marked and branches that fold into their parent",
+    "url": "https://www.affectui.com/components/trace-waterfall"
+  },
+  {
+    "slug": "usage-meter",
+    "title": "Usage Meter",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Data display",
+    "description": "Plan usage and AI credits – a stacked credits meter by category, daily sparkline, limits and a button that speaks up near the limit",
+    "url": "https://www.affectui.com/components/usage-meter"
+  },
+  {
+    "slug": "writing-assistant",
+    "title": "Writing Assistant",
+    "kind": "components",
+    "tier": "Pro",
+    "category": "Conversation",
+    "description": "AI chat card with a soft gradient glow, suggestions, streaming replies and live voice dictation",
+    "url": "https://www.affectui.com/components/writing-assistant"
+  },
+  {
+    "slug": "agent-chat",
+    "title": "Agent Chat",
+    "kind": "screens",
+    "tier": "Pro",
+    "category": "Agents",
+    "description": "Chat with an orchestrating agent, the agents at work, and a brief to fill in beside it",
+    "url": "https://www.affectui.com/screens/agent-chat"
+  },
+  {
+    "slug": "agent-run",
+    "title": "Agent Run",
+    "kind": "screens",
+    "tier": "Pro",
+    "category": "Agents",
+    "description": "One autonomous agent run: the plan ticking through its steps, the tool calls, an approval it waits on and the draft it wrote",
+    "url": "https://www.affectui.com/screens/agent-run"
+  },
+  {
+    "slug": "analytics",
+    "title": "Analytics",
+    "kind": "screens",
+    "tier": "Pro",
+    "category": "Data display",
+    "description": "Revenue dashboard: key figures, revenue by channel, breakdown, top products and weekly trends",
+    "url": "https://www.affectui.com/screens/analytics"
+  },
+  {
+    "slug": "app-shell-flat",
+    "title": "App Shell Flat",
+    "kind": "screens",
+    "tier": "Pro",
+    "category": "Workspace",
+    "description": "The App Shell laid flat – gray sidebar and an edge-to-edge page, split by a single hairline",
+    "url": "https://www.affectui.com/screens/app-shell-flat"
+  },
+  {
+    "slug": "app-shell",
+    "title": "App Shell Inset",
+    "kind": "screens",
+    "tier": "Pro",
+    "category": "Workspace",
+    "description": "Collapsible sidebar with workspace, menu, projects and account – the frame every screen sits in",
+    "url": "https://www.affectui.com/screens/app-shell"
+  },
+  {
+    "slug": "assistant-home",
+    "title": "Assistant Home",
+    "kind": "screens",
+    "tier": "Pro",
+    "category": "Conversation",
+    "description": "AI assistant start page: greeting, prompt box with tools, connected apps and suggestions",
+    "url": "https://www.affectui.com/screens/assistant-home"
+  },
+  {
+    "slug": "crm",
+    "title": "CRM",
+    "kind": "screens",
+    "tier": "Pro",
+    "category": "Workspace",
+    "description": "Company list with pipelines, open views as tabs and an editable data table",
+    "url": "https://www.affectui.com/screens/crm"
+  },
+  {
+    "slug": "evals",
+    "title": "Evals",
+    "kind": "screens",
+    "tier": "Pro",
+    "category": "Data display",
+    "description": "Prompt evaluation dashboard: pass rate by version, reviewable prompt changes and test cases you can re-run",
+    "url": "https://www.affectui.com/screens/evals"
+  },
+  {
+    "slug": "folder",
+    "title": "Folder",
+    "kind": "screens",
+    "tier": "Pro",
+    "category": "Workspace",
+    "description": "Inside one folder: breadcrumbs, file cards with previews, and an empty state",
+    "url": "https://www.affectui.com/screens/folder"
+  },
+  {
+    "slug": "files",
+    "title": "Folders",
+    "kind": "screens",
+    "tier": "Pro",
+    "category": "Workspace",
+    "description": "Folder overview with tabs, search, sort, grid/list toggle and file templates",
+    "url": "https://www.affectui.com/screens/files"
+  },
+  {
+    "slug": "integrations",
+    "title": "Integrations",
+    "kind": "screens",
+    "tier": "Pro",
+    "category": "Workspace",
+    "description": "App directory with a sticky header, categories, search and connect states",
+    "url": "https://www.affectui.com/screens/integrations"
+  },
+  {
+    "slug": "onboarding",
+    "title": "Onboarding",
+    "kind": "screens",
+    "tier": "Pro",
+    "category": "Workspace",
+    "description": "First-run flow of an AI workspace: workspace setup, tool connections, team invites and a first agent, with a getting-started checklist",
+    "url": "https://www.affectui.com/screens/onboarding"
+  },
+  {
+    "slug": "settings-billing",
+    "title": "Settings & Billing",
+    "kind": "screens",
+    "tier": "Pro",
+    "category": "Workspace",
+    "description": "Settings page with tabs: workspace, members, API keys and billing with plan, usage, payment method, plan comparison and invoices",
+    "url": "https://www.affectui.com/screens/settings-billing"
+  },
+  {
+    "slug": "logo-marquee",
+    "title": "Logo Marquee",
+    "kind": "blocks",
+    "tier": "Free",
+    "category": "Marketing",
+    "description": "The endless “Trusted by” strip – a seamless loop that eases to a stop on hover, scrubs with inertia and lifts the hovered logo to colour",
+    "url": "https://www.affectui.com/blocks/logo-marquee"
+  },
+  {
+    "slug": "testimonial-wall",
+    "title": "Testimonial Wall",
+    "kind": "blocks",
+    "tier": "Free",
+    "category": "Marketing",
+    "description": "The landing-page wall of quotes – columns that scroll endlessly in opposite directions, ease to a stop on hover and scrub with inertia",
+    "url": "https://www.affectui.com/blocks/testimonial-wall"
+  },
+  {
+    "slug": "ai-workspace",
+    "title": "AI Workspace",
+    "kind": "blocks",
+    "tier": "Pro",
+    "category": "Workspace",
+    "description": "Complete assistant app – sidebar, welcome, streaming chat and projects, built on the Chat Composer",
+    "url": "https://www.affectui.com/blocks/ai-workspace"
+  },
+  {
+    "slug": "agent-gallery",
+    "title": "Agent Gallery",
+    "kind": "blocks",
+    "tier": "Pro",
+    "category": "Marketing",
+    "description": "Slim gradient panels with one open product screen in the middle – pick a panel and it glides open",
+    "url": "https://www.affectui.com/blocks/agent-gallery"
+  },
+  {
+    "slug": "app-directory",
+    "title": "App Directory",
+    "kind": "blocks",
+    "tier": "Pro",
+    "category": "Workspace",
+    "description": "Browse, search and connect integrations – categories, filters and app cards with a connect flow",
+    "url": "https://www.affectui.com/blocks/app-directory"
+  },
+  {
+    "slug": "client-context",
+    "title": "Client Context",
+    "kind": "blocks",
+    "tier": "Pro",
+    "category": "Workspace",
+    "description": "A client workspace with live numbers and a shared context timeline – switch clients, search, filter and add notes or files",
+    "url": "https://www.affectui.com/blocks/client-context"
+  },
+  {
+    "slug": "invoice-credit",
+    "title": "Invoice & Credit Note",
+    "kind": "blocks",
+    "tier": "Pro",
+    "category": "Data display",
+    "description": "An invoice and its credit note stacked like paper – switch between them, pick lines to credit, adjust amounts and issue",
+    "url": "https://www.affectui.com/blocks/invoice-credit"
+  },
+  {
+    "slug": "kpi-board",
+    "title": "KPI Board",
+    "kind": "blocks",
+    "tier": "Pro",
+    "category": "Data display",
+    "description": "The top of a dashboard – three trend cards, an overview chart that compares this period with the last, and a focus card; hover shows any day's value and every number rolls when the range changes",
+    "url": "https://www.affectui.com/blocks/kpi-board"
+  },
+  {
+    "slug": "metrics-dashboard",
+    "title": "Metrics Dashboard",
+    "kind": "blocks",
+    "tier": "Pro",
+    "category": "Data display",
+    "description": "Sales overview – KPI cards pick the metric, one chart switches between dotted line and bars, with top products and channels",
+    "url": "https://www.affectui.com/blocks/metrics-dashboard"
+  },
+  {
+    "slug": "pricing-plans",
+    "title": "Pricing Plans",
+    "kind": "blocks",
+    "tier": "Pro",
+    "category": "Marketing",
+    "description": "Pricing section with a monthly / yearly switch, three plan cards and collapsible details",
+    "url": "https://www.affectui.com/blocks/pricing-plans"
+  },
+  {
+    "slug": "task-board",
+    "title": "Task Board",
+    "kind": "blocks",
+    "tier": "Pro",
+    "category": "Workspace",
+    "description": "Kanban board with drag and drop, quick add, a detail panel, search, label filters and a compact view",
+    "url": "https://www.affectui.com/blocks/task-board"
+  },
+  {
+    "slug": "agent-team",
+    "title": "Agent Team",
+    "kind": "illustrations",
+    "tier": "Free",
+    "category": "Artwork & motion",
+    "description": "A prompt types itself and branches out into three agents, each with a role and overlapping tool logos",
+    "url": "https://www.affectui.com/illustrations/agent-team"
+  },
+  {
+    "slug": "cover-flow",
+    "title": "Cover Flow",
+    "kind": "illustrations",
+    "tier": "Free",
+    "category": "Artwork & motion",
+    "description": "Browse covers in 3D – drag, flick or scrub the row, it springs to the nearest cover; images drift in their frames over a soft reflection",
+    "url": "https://www.affectui.com/illustrations/cover-flow"
+  },
+  {
+    "slug": "region-dach",
+    "title": "DACH Region",
+    "kind": "illustrations",
+    "tier": "Free",
+    "category": "Artwork & motion",
+    "description": "DACH map with fading neighbours and a pastel band along the border, switchable to the US, China, India, Brazil or Japan",
+    "url": "https://www.affectui.com/illustrations/region-dach"
+  },
+  {
+    "slug": "empty-calendar",
+    "title": "Empty Calendar",
+    "kind": "illustrations",
+    "tier": "Free",
+    "category": "Artwork & motion",
+    "description": "Stack of calendar cards marked empty, fanning out on hover",
+    "url": "https://www.affectui.com/illustrations/empty-calendar"
+  },
+  {
+    "slug": "enrichment-orbit",
+    "title": "Enrichment Orbit",
+    "kind": "illustrations",
+    "tier": "Free",
+    "category": "Artwork & motion",
+    "description": "Grok tile inside two rings with comets and data nodes orbiting around it",
+    "url": "https://www.affectui.com/illustrations/enrichment-orbit"
+  },
+  {
+    "slug": "frost-cloud",
+    "title": "Frost Cloud",
+    "kind": "illustrations",
+    "tier": "Free",
+    "category": "Artwork & motion",
+    "description": "A frosted white cloud with eyes cut out of it, on a red-orange or blue sky – it floats, turns to look around, blinks, follows the pointer and bounces with a wink when clicked",
+    "url": "https://www.affectui.com/illustrations/frost-cloud"
+  },
+  {
+    "slug": "ghosted-chat",
+    "title": "Ghosted Chat",
+    "kind": "illustrations",
+    "tier": "Free",
+    "category": "Artwork & motion",
+    "description": "Unanswered chat messages marked as read, with a thumbs-down reply on hover",
+    "url": "https://www.affectui.com/illustrations/ghosted-chat"
+  },
+  {
+    "slug": "glow-cloud",
+    "title": "Glow Cloud",
+    "kind": "illustrations",
+    "tier": "Free",
+    "category": "Artwork & motion",
+    "description": "A glowing cloud with eyes in blue or red-orange – it floats, turns to look around, blinks, follows the pointer and bounces with a wink when clicked",
+    "url": "https://www.affectui.com/illustrations/glow-cloud"
+  },
+  {
+    "slug": "integration-beam",
+    "title": "Integration Beam",
+    "kind": "illustrations",
+    "tier": "Free",
+    "category": "Artwork & motion",
+    "description": "Your product between the tools it connects – light pulses flow along curved beams, hover to focus a tool, click to pause it",
+    "url": "https://www.affectui.com/illustrations/integration-beam"
+  },
+  {
+    "slug": "integration-grid",
+    "title": "Integration Grid",
+    "kind": "illustrations",
+    "tier": "Free",
+    "category": "Artwork & motion",
+    "description": "Honeycomb-like wall of integration logos around a bright centre tile with your product mark, fading out toward the edges",
+    "url": "https://www.affectui.com/illustrations/integration-grid"
+  },
+  {
+    "slug": "layer-stack",
+    "title": "Layer Stack",
+    "kind": "illustrations",
+    "tier": "Free",
+    "category": "Artwork & motion",
+    "description": "Isometric stack of five layers with a list beside it – the chosen entry lifts its layer out in color",
+    "url": "https://www.affectui.com/illustrations/layer-stack"
+  },
+  {
+    "slug": "lead-sourcing",
+    "title": "Lead Sourcing",
+    "kind": "illustrations",
+    "tier": "Free",
+    "category": "Artwork & motion",
+    "description": "ChatGPT tile linked to Gmail and Grok, with a shine running along the connection",
+    "url": "https://www.affectui.com/illustrations/lead-sourcing"
+  },
+  {
+    "slug": "logo-cluster",
+    "title": "Logo Cluster",
+    "kind": "illustrations",
+    "tier": "Free",
+    "category": "Artwork & motion",
+    "description": "Your mark on a white disc in the middle – company logos bounce out of it and settle around it",
+    "url": "https://www.affectui.com/illustrations/logo-cluster"
+  },
+  {
+    "slug": "model-wheel",
+    "title": "Model Wheel",
+    "kind": "illustrations",
+    "tier": "Free",
+    "category": "Artwork & motion",
+    "description": "AI model names on a turning drum – the rows bend away at the edges and each model lands on a soft gray fill",
+    "url": "https://www.affectui.com/illustrations/model-wheel"
+  },
+  {
+    "slug": "side-folder",
+    "title": "Side Folder",
+    "kind": "illustrations",
+    "tier": "Free",
+    "category": "Artwork & motion",
+    "description": "Glassy blue folder on its side, documents sliding out to the right as the pocket swings open on hover",
+    "url": "https://www.affectui.com/illustrations/side-folder"
+  },
+  {
+    "slug": "tab-overload",
+    "title": "Tab Overload",
+    "kind": "illustrations",
+    "tier": "Free",
+    "category": "Artwork & motion",
+    "description": "Overlapping browser windows where the highlight follows the hovered tab",
+    "url": "https://www.affectui.com/illustrations/tab-overload"
+  },
+  {
+    "slug": "team-invite",
+    "title": "Team Invite",
+    "kind": "illustrations",
+    "tier": "Free",
+    "category": "Artwork & motion",
+    "description": "Connected teammates – a cursor drags a new one into the empty slot, the line turns solid and they go online",
+    "url": "https://www.affectui.com/illustrations/team-invite"
+  },
+  {
+    "slug": "glass-folder",
+    "title": "Glass Folder",
+    "kind": "illustrations",
+    "tier": "Pro",
+    "category": "Artwork & motion",
+    "description": "Glassy blue folder with documents behind a frosted pocket that tips open on hover",
+    "url": "https://www.affectui.com/illustrations/glass-folder"
+  },
+  {
+    "slug": "glow-keyboard",
+    "title": "Glow Keyboard",
+    "kind": "illustrations",
+    "tier": "Pro",
+    "category": "Artwork & motion",
+    "description": "AI chat input that types itself over a glass keyboard – every key press sends a wave up the gradient floor",
+    "url": "https://www.affectui.com/illustrations/glow-keyboard"
+  },
+  {
+    "slug": "integration-flow",
+    "title": "Integration Flow",
+    "kind": "illustrations",
+    "tier": "Pro",
+    "category": "Artwork & motion",
+    "description": "Integration pills rotating along a dashed arc, each beaming its data into a central analysis hub",
+    "url": "https://www.affectui.com/illustrations/integration-flow"
+  },
+  {
+    "slug": "outreach-branches",
+    "title": "Outreach Branches",
+    "kind": "illustrations",
+    "tier": "Pro",
+    "category": "Artwork & motion",
+    "description": "Lines branching out to Gmail, Slack and Notion with colored pulses flowing down",
+    "url": "https://www.affectui.com/illustrations/outreach-branches"
+  },
+  {
+    "slug": "project-flow",
+    "title": "Project Flow",
+    "kind": "illustrations",
+    "tier": "Pro",
+    "category": "Artwork & motion",
+    "description": "Animated scene of a client task branching into subtasks, notes and assigned roles",
+    "url": "https://www.affectui.com/illustrations/project-flow"
+  },
+  {
+    "slug": "voice-orb",
+    "title": "Voice Orb",
+    "kind": "illustrations",
+    "tier": "Pro",
+    "category": "Artwork & motion",
+    "description": "The face of a voice assistant – a sphere of dots that breathes, catches sound, collapses into a spinning ring while thinking and ripples when it speaks",
+    "url": "https://www.affectui.com/illustrations/voice-orb"
+  },
+  {
+    "slug": "world-map",
+    "title": "World Map Continental",
+    "kind": "illustrations",
+    "tier": "Pro",
+    "category": "Artwork & motion",
+    "description": "World map with one highlighted continent and a pastel band along its coastline, switchable between all six",
+    "url": "https://www.affectui.com/illustrations/world-map"
+  },
+  {
+    "slug": "grid-background",
+    "title": "Grid Background",
+    "kind": "motion",
+    "tier": "Free",
+    "category": "Artwork & motion",
+    "description": "A fine line grid that drifts slowly behind your content and fades out towards the edges",
+    "url": "https://www.affectui.com/motion/grid-background"
+  },
+  {
+    "slug": "number-ticker",
+    "title": "Number Ticker",
+    "kind": "motion",
+    "tier": "Free",
+    "category": "Artwork & motion",
+    "description": "Odometer-style numbers – every digit rolls to its new value and counts in from zero when it scrolls into view",
+    "url": "https://www.affectui.com/motion/number-ticker"
+  },
+  {
+    "slug": "shimmer-loader",
+    "title": "Shimmer Loader",
+    "kind": "motion",
+    "tier": "Free",
+    "category": "Artwork & motion",
+    "description": "Skeleton blocks that share one soft light sweep, plus shimmering text for “Thinking…” states",
+    "url": "https://www.affectui.com/motion/shimmer-loader"
+  },
+  {
+    "slug": "text-reveal",
+    "title": "Text Reveal",
+    "kind": "motion",
+    "tier": "Free",
+    "category": "Artwork & motion",
+    "description": "Text that arrives word by word or letter by letter – each piece rises out of a soft blur as it scrolls into view",
+    "url": "https://www.affectui.com/motion/text-reveal"
+  },
+  {
+    "slug": "blur-crossfade",
+    "title": "Blur Crossfade",
+    "kind": "motion",
+    "tier": "Pro",
+    "category": "Artwork & motion",
+    "description": "Swaps content with a soft blur while the box glides smoothly to the size of what comes next",
+    "url": "https://www.affectui.com/motion/blur-crossfade"
+  },
+  {
+    "slug": "gradient-floor",
+    "title": "Gradient Floor",
+    "kind": "motion",
+    "tier": "Pro",
+    "category": "Artwork & motion",
+    "description": "A blurred colour gradient that glows up from the bottom edge – two layers that drift and morph",
+    "url": "https://www.affectui.com/motion/gradient-floor"
+  },
+  {
+    "slug": "gradient-text",
+    "title": "Gradient Text",
+    "kind": "motion",
+    "tier": "Pro",
+    "category": "Artwork & motion",
+    "description": "Letters cut from a liquid, ever-flowing gradient – the color sweeps across the word the first time it's seen",
+    "url": "https://www.affectui.com/motion/gradient-text"
+  },
+  {
+    "slug": "tilt-card",
+    "title": "Tilt Card",
+    "kind": "motion",
+    "tier": "Pro",
+    "category": "Artwork & motion",
+    "description": "A card that tilts in 3D towards the pointer, with a soft glare that follows it and a smooth spring back",
+    "url": "https://www.affectui.com/motion/tilt-card"
+  },
+  {
+    "slug": "agent-diff",
+    "title": "Agent diff",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Agents",
+    "description": "A code diff an agent produced, hunk by hunk, with per-hunk accept and reject",
+    "url": ""
+  },
+  {
+    "slug": "agent-terminal",
+    "title": "Agent terminal",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Agents",
+    "description": "Streamed command output from an agent's tool call, with severity marking and jump-to-latest",
+    "url": ""
+  },
+  {
+    "slug": "agent-handoff",
+    "title": "Agent handoff",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Agents",
+    "description": "Control passing from one agent to another, with the reason, the payload and an accept or decline decision",
+    "url": ""
+  },
+  {
+    "slug": "agent-budget",
+    "title": "Agent budget",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Agents",
+    "description": "A run's token budget as a segmented meter, with spend, remaining allowance and an overshoot projection",
+    "url": ""
+  },
+  {
+    "slug": "agent-permissions",
+    "title": "Agent permissions",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Agents",
+    "description": "A tool permission matrix with allow, ask and deny per tool, and a scope for remembering the decision",
+    "url": ""
+  },
+  {
+    "slug": "agent-logs",
+    "title": "Agent logs",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Agents",
+    "description": "A structured log stream with level filters, search and pinnable rows",
+    "url": ""
+  },
+  {
+    "slug": "subagent-spawn",
+    "title": "Subagent spawn",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Agents",
+    "description": "A parent agent fanning out N children, each with its own task and status, collapsing to a tally as they finish",
+    "url": ""
+  },
+  {
+    "slug": "group-chat",
+    "title": "Group chat",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Conversation",
+    "description": "A shared thread where several agents and one human talk, with per-speaker identity and a reply target",
+    "url": ""
+  },
+  {
+    "slug": "human-review-queue",
+    "title": "Human review queue",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Agents",
+    "description": "A queue of items awaiting a human decision, worked through one at a time with keyboard shortcuts",
+    "url": ""
+  },
+  {
+    "slug": "tool-registry",
+    "title": "Tool registry",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Agents",
+    "description": "The catalogue of tools an agent may call, with signatures, risk level and per-tool enablement",
+    "url": ""
+  },
+  {
+    "slug": "agent-sandbox",
+    "title": "Agent sandbox",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Agents",
+    "description": "An agent's sandboxed workspace as a file tree beside a preview pane, with a reset action",
+    "url": ""
+  },
+  {
+    "slug": "cost-meter",
+    "title": "Cost meter",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Agents",
+    "description": "What a session has actually spent, as a running figure with a rate sparkline and a per-model breakdown",
+    "url": ""
+  },
+  {
+    "slug": "agent-schedule",
+    "title": "Agent schedule",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Agents",
+    "description": "What wakes an agent: recurring schedules and event triggers, with last run, next run and enablement",
+    "url": ""
+  },
+  {
+    "slug": "memory-graph",
+    "title": "Memory graph",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Agents",
+    "description": "What an agent remembers as a node and link graph, with a detail panel for the selected entity",
+    "url": ""
+  },
+  {
+    "slug": "branch-explorer",
+    "title": "Branch explorer",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Agents",
+    "description": "Parallel attempts an agent made from a common root, each with its cost and outcome, and a way to promote one",
+    "url": ""
+  },
+  {
+    "slug": "guardrail-editor",
+    "title": "Guardrail editor",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Agents",
+    "description": "Ordered policy rules with a matcher and an action, plus a tester showing which rule fires on sample input",
+    "url": ""
+  },
+  {
+    "slug": "session-replay",
+    "title": "Session replay",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Agents",
+    "description": "A scrubber over a recorded session timeline, with a playhead, transport controls and the event under the playhead",
+    "url": ""
+  },
+  {
+    "slug": "agent-replay",
+    "title": "Agent replay",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Agents",
+    "description": "A step-through debugger over one agent's reasoning, showing each step's input, output and decision",
+    "url": ""
+  },
+  {
+    "slug": "session-browser",
+    "title": "Session browser",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Workspace",
+    "description": "A searchable session list grouped by day, with inline rename, delete confirmation and export",
+    "url": ""
+  },
+  {
+    "slug": "session-tree",
+    "title": "Session tree",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Workspace",
+    "description": "The session entry tree with parent rails, bookmark chips, an off-branch recession and a current-leaf marker",
+    "url": ""
+  },
+  {
+    "slug": "entry-actions",
+    "title": "Entry actions",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Conversation",
+    "description": "The per-message action row: fork, branch, copy and jump, disabled while the session is busy",
+    "url": ""
+  },
+  {
+    "slug": "slash-palette",
+    "title": "Slash palette",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Conversation",
+    "description": "A slash-triggered autocomplete over the runtime command catalog, with argument hints and source badges",
+    "url": ""
+  },
+  {
+    "slug": "attachment-tray",
+    "title": "Attachment tray",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Conversation",
+    "description": "Composer attachments with upload progress, a rejected reason and an overflow chip",
+    "url": ""
+  },
+  {
+    "slug": "image-viewer",
+    "title": "Image viewer",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Workspace",
+    "description": "A lightbox with click-to-zoom, clamped panning, paging and a download link",
+    "url": ""
+  },
+  {
+    "slug": "compaction-divider",
+    "title": "Compaction divider",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Conversation",
+    "description": "The in-transcript compaction marker: reason, method, token delta, failure and a running sweep",
+    "url": ""
+  },
+  {
+    "slug": "goal-tracker",
+    "title": "Goal tracker",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Agents",
+    "description": "An objective with a token budget, a live clock, and pause, resume, complete and drop states",
+    "url": ""
+  },
+  {
+    "slug": "runtime-settings",
+    "title": "Runtime settings",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Workspace",
+    "description": "The nine agent-behaviour settings in one panel, with a draft and a save bar that appears only when dirty",
+    "url": ""
+  },
+  {
+    "slug": "auth-panel",
+    "title": "Auth panel",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Workspace",
+    "description": "Provider sign-in rows with a browser handoff state and per-account sign-out",
+    "url": ""
+  },
+  {
+    "slug": "widget-strip",
+    "title": "Widget strip",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Feedback",
+    "description": "Keyed extension widgets above or below the composer, with textual severity and a leave animation",
+    "url": ""
+  },
+  {
+    "slug": "status-strip",
+    "title": "Status strip",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Feedback",
+    "description": "Keyed status slots in one row, folding the overflow into a popover and collapsing to nothing when empty",
+    "url": ""
+  },
+  {
+    "slug": "connection-banner",
+    "title": "Connection banner",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Feedback",
+    "description": "Transport health: starting, reconnecting with a countdown, exited with a code, and a history-gap note",
+    "url": ""
+  },
+  {
+    "slug": "reasoning-block",
+    "title": "Reasoning block",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Conversation",
+    "description": "A collapsible reasoning block with duration, tokens, narration promoted to answer text, and a redacted placeholder",
+    "url": ""
+  },
+  {
+    "slug": "side-question",
+    "title": "Side question",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Conversation",
+    "description": "A stack of aside questions with a streaming answer, cancel, and an interrupted note",
+    "url": ""
+  },
+  {
+    "slug": "voice-session",
+    "title": "Voice session",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Conversation",
+    "description": "Live voice phase, input and output level meters, streaming captions, mute and stop",
+    "url": ""
+  },
+  {
+    "slug": "file-mention",
+    "title": "File mention",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Conversation",
+    "description": "Inline file cards with path, line count, an expandable preview and a skipped reason",
+    "url": ""
+  },
+  {
+    "slug": "error-card",
+    "title": "Error card",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Feedback",
+    "description": "A failed turn with provider metadata, HTTP status, retryability and a scheduled-retry state",
+    "url": ""
+  },
+  {
+    "slug": "todo-phases",
+    "title": "Todo phases",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Agents",
+    "description": "Phases containing tasks, with per-item status, a live step and an attempt count",
+    "url": ""
+  },
+  {
+    "slug": "ghost-text",
+    "title": "Ghost text",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Conversation",
+    "description": "Inline word completion aligned to the caret, accepted with Tab and dismissed with Escape",
+    "url": ""
+  },
+  {
+    "slug": "site-header",
+    "title": "Site header",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Marketing",
+    "description": "Sticky marketing header with centre nav, one dropdown group, a login link and a gradient CTA",
+    "url": ""
+  },
+  {
+    "slug": "site-footer",
+    "title": "Site footer",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Marketing",
+    "description": "Slim site footer with a brand mark, wrap-friendly link rows and a copyright line",
+    "url": ""
+  },
+  {
+    "slug": "announcement-pill",
+    "title": "Announcement pill",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Marketing",
+    "description": "A launch pill with a label chip, a message and an optional dismiss",
+    "url": ""
+  },
+  {
+    "slug": "section-intro",
+    "title": "Section intro",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Marketing",
+    "description": "The eyebrow, heading and lead paragraph that opens a marketing section, centred or left",
+    "url": ""
+  },
+  {
+    "slug": "faq-accordion",
+    "title": "FAQ accordion",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Marketing",
+    "description": "Questions that fold open one at a time, with a plus that turns and a single-open rule",
+    "url": ""
+  },
+  {
+    "slug": "chat-window",
+    "title": "Chat window",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Marketing",
+    "description": "A titled window chrome with traffic dots and a status slot, wrapping any preview",
+    "url": ""
+  },
+  {
+    "slug": "mock-thread",
+    "title": "Mock thread",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Marketing",
+    "description": "A chat bubble stack with channel avatars, an AI tag, a typing bubble and a source note",
+    "url": ""
+  },
+  {
+    "slug": "phone-mock",
+    "title": "Phone mock",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Marketing",
+    "description": "A phone frame with status bar, app bar, scrolling thread and a composer",
+    "url": ""
+  },
+  {
+    "slug": "channel-inbox",
+    "title": "Channel inbox",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Marketing",
+    "description": "A compact inbox preview listing conversations across channels with unread and status marks",
+    "url": ""
+  },
+  {
+    "slug": "stock-card",
+    "title": "Stock card",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Marketing",
+    "description": "A catalogue entry that an answer cited, with stock meta and the quoted reply",
+    "url": ""
+  },
+  {
+    "slug": "cs-inbox",
+    "title": "CS inbox",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Marketing",
+    "description": "The full customer-service inbox: conversation list, thread and a takeover bar",
+    "url": ""
+  },
+  {
+    "slug": "comparison-matrix",
+    "title": "Comparison matrix",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Marketing",
+    "description": "Three products compared feature by feature, with the recommended column raised",
+    "url": ""
+  },
+  {
+    "slug": "portfolio-marquee",
+    "title": "Portfolio marquee",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Marketing",
+    "description": "Two rows of work previews scrolling in opposite directions, pausing on hover",
+    "url": ""
+  },
+  {
+    "slug": "browser-frame",
+    "title": "Browser frame",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Marketing",
+    "description": "Browser chrome with dots and an address bar over a fixed 16 by 10 viewport",
+    "url": ""
+  },
+  {
+    "slug": "process-steps",
+    "title": "Process steps",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Marketing",
+    "description": "A numbered process as a line of steps with connectors, horizontal or stacked",
+    "url": ""
+  },
+  {
+    "slug": "highlight-band",
+    "title": "Highlight band",
+    "kind": "components",
+    "tier": "Core",
+    "category": "Marketing",
+    "description": "A one line emphasised band that sets a highlight apart from the prose around it",
+    "url": ""
+  },
+  {
+    "slug": "hero-band",
+    "title": "Hero band",
+    "kind": "blocks",
+    "tier": "Core",
+    "category": "Marketing",
+    "description": "The opening band of a landing page: launch pill, headline with an inline glyph, lead and two CTAs",
+    "url": ""
+  },
+  {
+    "slug": "feature-grid",
+    "title": "Feature grid",
+    "kind": "blocks",
+    "tier": "Core",
+    "category": "Marketing",
+    "description": "A two-column grid of feature cards, each with a heading, copy and a visual slot",
+    "url": ""
+  },
+  {
+    "slug": "use-case-switcher",
+    "title": "Use case switcher",
+    "kind": "blocks",
+    "tier": "Core",
+    "category": "Marketing",
+    "description": "Chips that switch the headline, copy and CTA beside a phone preview",
+    "url": ""
+  },
+  {
+    "slug": "cta-band",
+    "title": "CTA band",
+    "kind": "blocks",
+    "tier": "Core",
+    "category": "Marketing",
+    "description": "A closing band with a watermark mark, a headline, a lead and two CTAs",
+    "url": ""
+  },
+  {
+    "slug": "pricing-tiers",
+    "title": "Pricing tiers",
+    "kind": "blocks",
+    "tier": "Core",
+    "category": "Marketing",
+    "description": "Four plan cards with a monthly or yearly switch, discount badge, ribbon badges and per-feature help",
+    "url": ""
+  },
+  {
+    "slug": "legal-page",
+    "title": "Legal page",
+    "kind": "blocks",
+    "tier": "Core",
+    "category": "Marketing",
+    "description": "A legal document page with a document switcher, a sticky contents list and numbered sections",
+    "url": ""
+  },
+  {
+    "slug": "service-row",
+    "title": "Service row",
+    "kind": "blocks",
+    "tier": "Core",
+    "category": "Marketing",
+    "description": "A service explained full width: a tag chip, a heading, capability tags and a CTA beside a shot",
+    "url": ""
+  },
+  {
+    "slug": "numbered-points",
+    "title": "Numbered points",
+    "kind": "blocks",
+    "tier": "Core",
+    "category": "Marketing",
+    "description": "A commercial argument: a heading and lead beside rows that carry square step numbers",
+    "url": ""
+  }
+]
